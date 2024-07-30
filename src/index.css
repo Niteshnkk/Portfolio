@@ -1,0 +1,78 @@
+*{
+  margin: 0;
+  padding: 0;
+
+}
+body{
+  background-color:rgba(0, 0, 0, 0.881) ;
+}
+
+nav{
+  background-color: black;
+  color: blue;
+}
+[data-type="button_gradient"] {
+  background: linear-gradient(to right, #c119ca, #c52a0f);
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 25px;
+  
+
+}
+[data-type="button_normal"] {
+  background: transparent;
+  border: 1px solid white;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 25px;
+  margin-left: 20px;
+
+}
+
+/* Link{
+  display: flex;
+  flex-direction: column;
+} */
+@media (max-width: 1200px) {
+  [data-type="button_gradient"], [data-type="button_normal"] {
+    padding: 8px 16px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 992px) {
+  [data-type="button_gradient"], [data-type="button_normal"] {
+    padding: 6px 12px;
+    font-size: 12px;
+    margin: 3px 1px;
+  }
+}
+
+@media (max-width: 768px) {
+  [data-type="button_gradient"], [data-type="button_normal"] {
+    padding: 5px 10px;
+    font-size: 12px;
+    margin: 2px 1px;
+  }
+}
+
+@media (max-width: 576px) {
+  [data-type="button_gradient"], [data-type="button_normal"] {
+    padding: 4px 8px;
+    font-size: 10px;
+    margin: 2px 1px;
+  }
+}

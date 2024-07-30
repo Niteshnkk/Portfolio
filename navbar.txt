@@ -1,0 +1,70 @@
+
+
+
+import { Link } from 'react-router-dom';
+import styles from "../Navbar/Navbar.module.css";
+import { useState } from 'react';
+import info1 from "../../assets/info.png";
+import line from "../../assets/line.png"
+
+
+
+
+const logo = {
+  width: "6rem",
+  lineHeight: "2rem",
+  fontSize: "18px",
+  textDecoration: "none"
+};
+
+
+const line_logo = {
+  display: "block",
+  margin: "0 auto",
+  width: "30px",
+  height:"15px"
+};
+
+
+
+const Navbar = () => {
+const [menu,setmenu] =useState("")
+  return (
+    <nav className="navbar navbar-expand-lg navbar-light bg-dark">
+      <div className="container-fluid">
+        <Link className="badge text-bg-primary text-wrap" style={logo} to="/">Nitesh</Link>
+        <button className="navbar-toggler bg-danger" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span className="navbar-toggler-icon"></span>
+        </button>
+        <div className="collapse navbar-collapse justify-content-center" id="navbarNav">
+          <ul className="navbar-nav">
+            <li className="nav-item">
+              <Link className="nav-link active text-primary" to="/" onClick={()=>setmenu("home")}><h6>Home </h6>{menu==="home"?<img src={line} alt="line" style={line_logo}  className='line_img'/>:<></>}</Link>
+          
+         </li>
+            <li className="nav-item">
+              <Link className="nav-link text-primary" to="/about">About Me</Link>
+            </li>
+            <li className="nav-item">
+              <Link className="nav-link text-primary" to="/services">Services</Link>
+            </li>
+            <li className="nav-item">
+              <Link className="nav-link text-primary" to="/my-work">My Work </Link>
+            </li>
+            <li className="nav-item">
+              <Link className="nav-link text-primary" to="/contact">Contact</Link>
+            </li>
+            <div className="connect_btn position-absolute top-3 end-0 me-5 translate-middle-x">
+              <button className="btn" data-type="button_gradient">Connect with me</button>
+              <img src={info1} alt="info-get" className={styles.info} />
+            </div>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  );
+}
+
+export default Navbar;
+
+

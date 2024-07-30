@@ -1,0 +1,321 @@
+
+    .logo_1{
+        width: 320px;
+        height: 400px;
+        box-shadow: 5px 2px 5px rgba(28, 3, 3, 0.5);
+        /* border-radius: 50%; */
+        opacity: 50;
+    }
+    .about-container{
+     color: white;
+     margin-top: 100px;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     flex-direction: column;
+    }
+    .title h1{
+        background: linear-gradient(to left, #d60c0c , #a11092 );
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        color: transparent;
+        display: inline-block;
+        text-transform: capitalize;
+        font-weight: 600;
+        font-size: 4rem;
+    
+    }
+    .title img{
+        width: 80px;
+        height: 70px;
+        position: relative;
+        top: -20px;
+        left: 10px;
+    }
+    .middle-content{
+   display: flex;
+    }
+    .middle-content p{
+        font-size: 1.1rem;
+        text-align: left;
+        width: 80%;
+        margin-left: 30px;
+    }
+    .skill{
+        margin-top: 30px;
+        display: flex;
+        flex-direction: column;
+        font-size: 1.1rem;
+        font-weight: 600;
+        text-transform: capitalize;
+        position:absolute;
+       
+      transform: translate(390px,100px);
+
+
+    }
+    .skill hr{
+        border: 0;
+        outline: 0;
+        width: 500px;
+        height: 8px;
+        background: linear-gradient(to left,rgb(219, 31, 31) -20%,#d913c9 60%);
+       border-radius: 25px;
+       /* position: absolute; */
+       transform: translate(100px,-30px);
+    }
+    .skill_1 hr{
+        width: 530px;
+    }
+    .skill_2 hr{
+        width: 450px;
+    }
+    .skill_3 hr{
+        width: 300px;
+    }
+    .skill_4 hr{
+        width: 270px;
+    }
+    .skill_5 hr{
+        width: 250px;
+    }
+.exp{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 30px 10px;
+   
+}
+.exp div{
+    margin-left: 100px;
+    padding: 10px 20px;
+}
+.exp hr{
+    border: 0;
+    outline: 0;
+    width: 80px;
+    height: 8px;
+    background: linear-gradient(to left,red,violet);
+   border-radius: 25px;
+   transform: rotate(90deg);
+}
+.exp h3{
+    background: linear-gradient(180deg, #Df8908 10%, #B415FF 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+}
+@media (max-width: 1200px) {
+    .logo_1 {
+        width: 280px;
+        height: 350px;
+    }
+
+    .title h1 {
+        font-size: 3.5rem;
+    }
+
+    .skill {
+        transform: translate(290px, 100px);
+    }
+
+    .skill hr {
+        width: 400px;
+        transform: translate(80px, -30px);
+    }
+
+    .skill_1 hr {
+        width: 430px;
+    }
+
+    .skill_2 hr {
+        width: 350px;
+    }
+
+    .skill_3 hr {
+        width: 250px;
+    }
+
+    .skill_4 hr {
+        width: 220px;
+    }
+
+    .skill_5 hr {
+        width: 200px;
+    }
+}
+
+@media (max-width: 992px) {
+    .logo_1 {
+        width: 240px;
+        height: 300px;
+    }
+
+    .title h1 {
+        font-size: 3rem;
+    }
+
+    .skill {
+        transform: translate(190px, 100px);
+    }
+
+    .skill hr {
+        width: 300px;
+        transform: translate(60px, -30px);
+    }
+
+    .skill_1 hr {
+        width: 330px;
+    }
+
+    .skill_2 hr {
+        width: 250px;
+    }
+
+    .skill_3 hr {
+        width: 200px;
+    }
+
+    .skill_4 hr {
+        width: 170px;
+    }
+
+    .skill_5 hr {
+        width: 150px;
+    }
+}
+
+@media (max-width: 768px) {
+    .logo_1 {
+        width: 200px;
+        height: 250px;
+    }
+
+    .title h1 {
+        font-size: 2.5rem;
+    }
+
+    .skill {
+        transform: translate(90px, 100px);
+    }
+
+    .skill hr {
+        width: 200px;
+        transform: translate(40px, -30px);
+    }
+
+    .skill_1 hr {
+        width: 230px;
+    }
+
+    .skill_2 hr {
+        width: 200px;
+    }
+
+    .skill_3 hr {
+        width: 150px;
+    }
+
+    .skill_4 hr {
+        width: 120px;
+    }
+
+    .skill_5 hr {
+        width: 100px;
+    }
+}
+
+@media (max-width: 576px) {
+    .middle-content{
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .middle-content p{
+        text-align: center;
+        width: 86%;
+        margin-top: 20px;
+    }
+
+    .title h1 {
+        font-size: 2rem;
+    }
+    .skill {
+        margin-top: -88px;
+        margin-bottom: 80px;
+        display: flex;
+        flex-direction: column;
+        font-size: 1.1rem;
+        font-weight: 600;
+        align-items: center;
+        text-transform: capitalize;
+        position: relative;
+        padding: 20px;
+        margin-right: 67px;
+        /* transform: translate(0px, 592px); */
+    }
+    .skill_1,.skill_2,.skill_3,.skill_4,.skill_5{
+        display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    margin-bottom: 20px;
+    }
+    
+    .move_{
+        margin-right: 102px;
+    }
+    .logo_1 {
+        width: 160px;
+        height: 200px;
+    }
+
+
+ 
+
+    .skill hr {
+        width: 100px;
+        /* transform: translate(20px, -30px); */
+        transform: translate(-92px, 4px);
+    }
+
+    .skill_1 hr {
+        width: 130px;
+    }
+
+    .skill_2 hr {
+        width: 125px;
+    }
+
+    .skill_3 hr {
+        width: 110px;
+    }
+
+    .skill_4 hr {
+        width: 110px;
+    }
+
+    .skill_5 hr {
+        width: 100px;
+    }
+
+    .exp {
+        flex-direction: row;
+        align-items: flex-start;
+    }
+    .exp p{
+        font-size: 0.8rem;
+    }
+
+    .exp div {
+        margin-left: 0;
+        padding: 10px 0;
+    }
+
+    .exp hr {
+        transform: rotate(90deg);
+        width: 100%;
+        margin-top: 45px;
+    }
+}
